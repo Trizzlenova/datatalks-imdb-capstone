@@ -4,4 +4,4 @@
 
 #### IMDB is an online database of information related to films, TV series, podcasts, home videos, video games...
 
-#### To access data files, click [here](https://datasets.imdbws.com/)
+#### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
