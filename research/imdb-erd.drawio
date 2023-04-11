@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-10T01:31:04.828Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="FFX_KJu-2doYeWoRnLyy" version="21.1.5" type="device">
+<mxfile host="app.diagrams.net" modified="2023-04-10T03:47:46.975Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="_YSGRdWEXOpnnh9lrNGy" version="21.1.5" type="device">
   <diagram name="raw-imdb-models" id="3pz5_l13RBfTGp7lG62v">
-    <mxGraphModel dx="2705" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#E6E6E6" math="0" shadow="0">
+    <mxGraphModel dx="1644" dy="1074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#E6E6E6" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -579,7 +579,7 @@
             <mxRectangle width="120" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="miuLS6dzeMhOq6DQjYXv-141" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;whiteSpace=wrap;strokeColor=#FF6392;fontColor=#000000;fontStyle=0" vertex="1" parent="miuLS6dzeMhOq6DQjYXv-138">
+        <mxCell id="miuLS6dzeMhOq6DQjYXv-141" value="integer" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;html=1;whiteSpace=wrap;strokeColor=#FF6392;fontColor=#000000;fontStyle=0" vertex="1" parent="miuLS6dzeMhOq6DQjYXv-138">
           <mxGeometry x="180" width="120" height="30" as="geometry">
             <mxRectangle width="120" height="30" as="alternateBounds" />
           </mxGeometry>
