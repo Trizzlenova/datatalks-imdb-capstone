@@ -9,6 +9,8 @@ prefect = "==2.7.7"
 prefect-gcp = {version = "==0.2.3", extras = ["cloud_storage"]}
 pyarrow = "*"
 pyspark = "*"
+flask = "*"
+prefect-fugue = "*"
 
 [dev-packages]
 
