@@ -1,3 +1,4 @@
 *.tsv.gz
 *.ipynb_checkpoints/
 *.parquet
+*.crc
