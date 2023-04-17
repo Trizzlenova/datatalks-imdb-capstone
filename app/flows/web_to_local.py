@@ -5,20 +5,16 @@ from prefect_gcp.cloud_storage import GcsBucket
 import pyspark
 from pyspark.sql import SparkSession, types, DataFrame
 
+from ..models import imdb_data
+
 
 spark = SparkSession.builder \
     .master("local[*]") \
     .appName('test') \
     .getOrCreate()
 
-title_crew_schema = types.StructType([
-    types.StructField('tconst', types.StringType(), True),
-    types.StructField('directors', types.StringType(), True),
-    types.StructField('writers', types.StringType(), True)
-])
-
 @task(retries = 3)
-def fetch(dataset_file: str) -> None:
+def fetch(dataset_file: str, schema) -> None:
     dataset_url = f'https://datasets.imdbws.com/{dataset_file}.tsv.gz'
     spark.sparkContext.addFile(dataset_url)
     df = spark.read \
@@ -26,7 +22,7 @@ def fetch(dataset_file: str) -> None:
         .csv(
             f'file://{pyspark.SparkFiles.get(dataset_file)}.tsv.gz',
             sep='\t',
-            schema=title_crew_schema
+            schema=schema
         )
     
     return df
@@ -62,8 +58,10 @@ def write_gcs(path: str) -> None:
 
 @flow(log_prints = True)
 def web_to_local():
-    dataset_file = 'title.crew'
+    dataset_name = imdb_data[0]['dataset_name']
+    schema = imdb_data[0]['schema']
+    print(dataset_name)
 
-    df = fetch(dataset_file)
-    path = write_local(df, dataset_file)
+    df = fetch(dataset_name, schema)
+    path = write_local(df, dataset_name)
     write_gcs(path)
