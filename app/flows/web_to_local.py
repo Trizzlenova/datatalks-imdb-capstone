@@ -58,10 +58,15 @@ def write_gcs(path: str) -> None:
 
 @flow(log_prints = True)
 def web_to_local():
-    dataset_name = imdb_data[0]['dataset_name']
-    schema = imdb_data[0]['schema']
-    print(dataset_name)
+    # dataset_name = imdb_data[0]['dataset_name']
+    # schema = imdb_data[0]['schema']
 
-    df = fetch(dataset_name, schema)
-    path = write_local(df, dataset_name)
-    write_gcs(path)
+    for data in imdb_data:
+        dataset_name = data['dataset_name']
+        schema = data['schema']
+
+        print(dataset_name)
+
+        df = fetch(dataset_name, schema)
+        path = write_local(df, dataset_name)
+        write_gcs(path)
