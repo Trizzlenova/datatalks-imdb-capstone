@@ -1,11 +1,9 @@
 from flask import Flask
-from .flows.web_to_local import *
+from .flows import etl_web_to_gcs
 
-
-@flow(log_prints = True)
 def create_app():
     app = Flask(__name__)
 
-    web_to_local()
+    etl_web_to_gcs()
 
     return app
