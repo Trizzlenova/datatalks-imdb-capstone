@@ -11,6 +11,8 @@ pyarrow = "*"
 pyspark = "*"
 flask = "*"
 prefect-fugue = "*"
+python-dotenv = "*"
+pandas-gbq = "*"
 
 [dev-packages]
 

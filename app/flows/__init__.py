@@ -5,9 +5,10 @@ from pyspark.sql import SparkSession
 
 from ..models import imdb_data
 
-from .etl_fetch_web import fetch
-from .etl_write_local import write_local
+from .etl_fetch_to_spark import fetch
+from .etl_spark_to_local import write_local
 from .etl_local_to_gcs import write_gcs
+from .etl_gcs_to_bq import etl_gcs_to_bq
 
 spark = SparkSession.builder \
     .master("local[*]") \
