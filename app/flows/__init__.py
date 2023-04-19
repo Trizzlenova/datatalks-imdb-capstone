@@ -27,3 +27,4 @@ def etl_web_to_gcs():
         df = fetch(spark, dataset_name, schema)
         path = write_local(df, dataset_name)
         write_gcs(path)
+        etl_gcs_to_bq(dataset_name)
