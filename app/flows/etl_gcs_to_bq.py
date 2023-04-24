@@ -32,7 +32,7 @@ def write_bq(dataset_name: str, df) -> None:
     gcp_credentials_block = GcpCredentials.load(PREFECT_GCP_CREDENTIALS)
     table_name = dataset_name.replace('.', '_')
     df.to_gbq(
-        destination_table = f'imdb.{table_name}',
+        destination_table = f'dl_imdb.{table_name}',
         project_id = PROJECT_ID,
         credentials = gcp_credentials_block.get_credentials_from_service_account(),
         chunksize = 500_000,

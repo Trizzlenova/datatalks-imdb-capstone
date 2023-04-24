@@ -13,6 +13,8 @@ flask = "*"
 prefect-fugue = "*"
 python-dotenv = "*"
 pandas-gbq = "*"
+dbt-core = "*"
+dbt-bigquery = "*"
 
 [dev-packages]
 

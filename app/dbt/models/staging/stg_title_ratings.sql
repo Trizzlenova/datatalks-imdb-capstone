@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('staging', 'title_crew') }}
+    select * from {{ source('staging', 'title_ratings') }}
 )
 select 
     *,

@@ -8,8 +8,14 @@ sources:
       # For postgres:
       # database: production
 
-      schema: imdb
+      schema: dl_imdb
 
       # loaded_at_field: record_loaded_at
       tables:
+        - name: title_akas
+        - name: title_basics
         - name: title_crew
+        - name: title_episode
+        - name: title_principals
+        - name: title_ratings
+        - name: name_basics
