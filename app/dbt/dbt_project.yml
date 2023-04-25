@@ -34,7 +34,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   imdb_capstone:
     # Config indicated by + and applies to all files under models/example/
-    staging:
+    # staging:
+    #   +enabled: true
+    #   +materialized: table
+    #   +schema: stg_imdb
+    core:
       +enabled: true
       +materialized: table
-      +schema: stg_imdb
+      +schema: core_imdb

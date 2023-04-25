@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+    - name: core
+      #For bigquery:
+      database: prefect-de-zoomcamp-376404
+
+      # For postgres:
+      # database: production
+
+      schema: imdb_stg_imdb
+
+      # loaded_at_field: record_loaded_at
+      tables:
+        - name: stg_title_akas
+        - name: stg_title_basics
+        - name: stg_title_crew
+        - name: stg_title_episode
+        - name: stg_title_principals
+        - name: stg_title_ratings
+        - name: stg_name_basics
