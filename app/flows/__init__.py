@@ -16,7 +16,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 @flow(log_prints = True)
-def etl_web_to_gcs():
+def etl_web_to_bq():
     # dataset_name = imdb_data[0]['dataset_name']
     # schema = imdb_data[0]['schema']
 

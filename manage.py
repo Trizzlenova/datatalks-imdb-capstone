@@ -1,6 +1,4 @@
-from app import create_app
-
-app = create_app()
+from app import run_etl_cycle
 
 if __name__ == '__main__':
-    app.run()
+    run_etl_cycle()

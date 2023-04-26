@@ -1,18 +1,18 @@
 with source as (
     SELECT SUM(tbl.countEach) AS totalRowCount FROM (
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_name_basics') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_name_basics') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_akas') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_akas') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_basics') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_basics') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_crew') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_crew') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_episode') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_episode') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_principals') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_principals') }}
         UNION ALL
-        SELECT COUNT(*) as countEach FROM {{ source('core', 'stg_title_ratings') }}
+        SELECT COUNT(*) as countEach FROM {{ ref('stg_title_ratings') }}
     ) tbl
 )
 

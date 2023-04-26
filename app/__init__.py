@@ -1,9 +1,7 @@
 from flask import Flask
-from .flows import etl_web_to_gcs
+from .flows import etl_web_to_bq
 
-def create_app():
-    app = Flask(__name__)
-
-    etl_web_to_gcs()
-
-    return app
+def run_etl_cycle():
+    print('ETL Starting...')
+    etl_web_to_bq()
+    print('ETL Complete!')
