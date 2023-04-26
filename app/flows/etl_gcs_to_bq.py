@@ -28,13 +28,11 @@ def transform(path: str) -> None:
 @task(log_prints = True)
 def write_to_bq(dataset_name: str, df) -> None:
     '''Write dataframe to BigQuery'''
-    PREFECT_GCP_CREDENTIALS = environ.get('PREFECT_GCP_CREDENTIALS')
-    PROJECT_ID = environ.get('BIGQUERY_PROJECT_ID')
-    gcp_credentials_block = GcpCredentials.load(PREFECT_GCP_CREDENTIALS)
+    gcp_credentials_block = GcpCredentials.load('imdb-gcp-creds')
     table_name = dataset_name.replace('.', '_')
     df.to_gbq(
         destination_table = f'dl_imdb.{table_name}',
-        project_id = PROJECT_ID,
+        project_id = 'de-imdb',
         credentials = gcp_credentials_block.get_credentials_from_service_account(),
         chunksize = 500_000,
         if_exists = 'replace'
