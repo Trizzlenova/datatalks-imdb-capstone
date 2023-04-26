@@ -8,9 +8,9 @@
 #### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
 
 ## :grey_question: Questions We're All Asking
-1. What are the top voted TV shows?
-2. What is the hottest genre year over year?
-3. 
+1. How do I even get this data?
+2. What are the top voted TV shows?
+3. What is the hottest genre year over year?
 
 ## :twisted_rightwards_arrows: Data Pipeline
 ![pipeline](images/data_pipeline.png)
@@ -29,7 +29,7 @@
 ## :notes: Join the Club!
 1. Fork and Clone the repository
    
-3. Steps to reproduce the project onto your machine (assuming you have a [Google Cloud account](https://cloud.google.com/free)):
+2. Steps to reproduce the project onto your machine (assuming you have a [Google Cloud account](https://cloud.google.com/free)):
     a. Create a new [GCP project](https://console.cloud.google.com/cloud-resource-manager)
     b. Setup [service account & authentication](https://cloud.google.com/docs/authentication/getting-started) for this project
        * Download service-account-keys (.json) for auth.
@@ -42,7 +42,7 @@
       gcloud auth application-default login
       ```
 
-4. Setup for Access
+3. Setup for Access
     a. [IAM Roles](https://cloud.google.com/storage/docs/access-control/iam-roles) for Service account:
     * Go to the *IAM* section of *IAM & Admin* https://console.cloud.google.com/iam-admin/iam
     * Click the *Edit principal* icon for your service account.
@@ -57,16 +57,27 @@
     export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
     ```
 
-5. Setup Terraform
+4. Setup Terraform
     a. On OS, run the following commands:
     ```
     brew tap hashicorp/tap
     brew install hashicorp/tap/terraform
     ```
-    b. Remaining instructions [here](https://github.com/Trizzlenova/datatalks-imdb-capstone/tree/main/terraform) in the terraform directory
+    b. Remaining instructions for Terraform [here](https://github.com/Trizzlenova/datatalks-imdb-capstone/tree/main/terraform) in the terraform directory
 
 6. Setup Prefect
     a. Sign-up for [Prefect](https://app.prefect.cloud/auth/login) start a workspace
-    b. Create the [prefect blocks](https://docs.prefect.io/latest/concepts/blocks/)
-    C. 
+    b. Create the following [prefect blocks](https://docs.prefect.io/latest/concepts/blocks/)
+        - [GCP Credentials](https://prefecthq.github.io/prefect-gcp/)
+        - [GCS Bucket](https://prefecthq.github.io/prefect-gcp/cloud_storage/#prefect_gcp.cloud_storage.GcsBucket)
+    c. Configure your credentials with GCP
 
+7. Run the pipeline :boom:
+    a. After the repository has been forked and cloned, cd into the repository
+    b. Run the python environment: `pipenv shell`
+    c. Install the dependencies: `pipenv install`
+    d. Start your prefect environment: `prefect orion start`
+    e. Open another terminal and start another python env: `pipenv shell`
+    f. Run the flow using flask: `python3 manage.py` or `flask run`
+
+## :alien: Next Steps
