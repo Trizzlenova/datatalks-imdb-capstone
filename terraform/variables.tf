@@ -1,5 +1,5 @@
 locals {
-  data_lake_bucket = "de_imdb"
+  data_lake_bucket = "imdb_data_lake"
 }
 
 variable "project" {
@@ -20,5 +20,5 @@ variable "storage_class" {
 variable "BQ_DATASET" {
   description = "BigQuery Dataset that raw data (from GCS) will be written to"
   type        = string
-  default     = "imdb"
+  default     = "de-imdb"
 }

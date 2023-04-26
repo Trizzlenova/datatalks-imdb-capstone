@@ -4,11 +4,14 @@ with source as (
         titleType,
         primaryTitle,
         cast(startYear as int) as startYear,
-        genres,
+        regexp_extract(genres, r'^[^,]*') as genre,
+        runTimeMinutes,
         current_timestamp() as insertion_timestamp,
     from {{ ref('stg_title_basics') }}
     where startYear is not null
     and startYear <= 2023
+    and titleType in ('tvEpisode', 'tvSeries', 'tvMiniSeries')
+    and genre <> '\\N'
     order by startYear asc
 ),
 

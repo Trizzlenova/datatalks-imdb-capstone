@@ -2,4 +2,8 @@
 *.ipynb_checkpoints/
 *.parquet
 *.crc
+*.tfstate
+*.tfstate.*
+*.terraform
+*.terraform.lock.*
 .env

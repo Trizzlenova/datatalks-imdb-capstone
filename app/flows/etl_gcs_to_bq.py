@@ -14,7 +14,7 @@ load_dotenv(find_dotenv())
 def extract_from_gcs(dataset_name: str) -> Path:
     '''Download trip data from GCS'''
     gcs_path = f'data/imdb/{dataset_name}.parquet'
-    gcs_block = GcsBucket.load('prefect-gcs')
+    gcs_block = GcsBucket.load('imdb-gcs')
     gcs_block.get_directory(from_path = gcs_path, local_path = f'./')
     return gcs_path
 
@@ -22,10 +22,11 @@ def extract_from_gcs(dataset_name: str) -> Path:
 def transform(path: str) -> None:
     '''Data cleaning example'''
     df = pd.read_parquet(path)
+    print(len(df))
     return df
 
 @task(log_prints = True)
-def write_bq(dataset_name: str, df) -> None:
+def write_to_bq(dataset_name: str, df) -> None:
     '''Write dataframe to BigQuery'''
     PREFECT_GCP_CREDENTIALS = environ.get('PREFECT_GCP_CREDENTIALS')
     PROJECT_ID = environ.get('BIGQUERY_PROJECT_ID')
@@ -44,4 +45,4 @@ def etl_gcs_to_bq(dataset_name):
     '''Main ETL flow to load data into Big Query'''
     path = extract_from_gcs(dataset_name)
     df = transform(path)
-    write_bq(dataset_name, df)
+    write_to_bq(dataset_name, df)

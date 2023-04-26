@@ -3,7 +3,7 @@ version: 2
 sources:
     - name: staging
       #For bigquery:
-      database: prefect-de-zoomcamp-376404
+      database: de-imdb
 
       # For postgres:
       # database: production
