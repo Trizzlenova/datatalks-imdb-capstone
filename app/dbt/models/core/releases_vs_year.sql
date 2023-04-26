@@ -11,7 +11,6 @@ with source as (
     where startYear is not null
     and startYear <= 2023
     and titleType in ('tvEpisode', 'tvSeries', 'tvMiniSeries')
-    and genre <> '\\N'
     order by startYear asc
 ),
 

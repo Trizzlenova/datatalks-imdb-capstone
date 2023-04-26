@@ -64,5 +64,16 @@ imdb_data = [
             types.StructField('averageRating', types.DoubleType(), True),
             types.StructField('numVotes', types.IntegerType(), True),
         ])
+    },
+    {
+        'dataset_name': 'name.basics',
+        'schema': types.StructType([
+                types.StructField('nconst',types.StringType(),True),
+                types.StructField('primaryName',types.StringType(),True),
+                types.StructField('birthYear',types.IntegerType(),True),
+                types.StructField('deathYear',types.IntegerType(),True),
+                types.StructField('primaryProfession',types.StringType(),True),
+                types.StructField('knownForTitles',types.StringType(),True)
+        ])
     }
 ]
