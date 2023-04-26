@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" modified="2023-04-26T06:03:59.929Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="-ikuUmhXtbtUOU29lXjs" version="21.1.5" type="device">
+  <diagram name="Page-1" id="q4skpg_crhsEUaq13dCe">
+    <mxGraphModel dx="1324" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f35TPlmRHD-43wabTEe5-2" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="140" y="300" width="550" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180.00000000000003" y="315" width="130" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-20" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="315" width="130" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-14" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="519.88" y="315" width="130" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-1" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png?20200406194337;" vertex="1" parent="1">
+          <mxGeometry x="10" y="430" width="119.08" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-6" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://www.outsystems.com/Forge_BL/rest/ComponentThumbnail/GetURL_ComponentThumbnail?ProjectImageId=30315;" vertex="1" parent="1">
+          <mxGeometry x="370" y="400" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-7" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://cdn.icon-icons.com/icons2/2699/PNG/512/google_bigquery_logo_icon_168150.png;" vertex="1" parent="1">
+          <mxGeometry x="539.88" y="400" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-8" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/2560px-Apache_Spark_logo.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="187.22" y="530" width="115.55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-9" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://i1.wp.com/softwareengineeringdaily.com/wp-content/uploads/2020/04/Prefect.png?resize=730%2C389&amp;ssl=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="239.99999999999991" width="158.95" height="84.67" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-10" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://d33wubrfki0l68.cloudfront.net/38a468b6bb7aeae799ea43bb9510af0753b90d91/42e9b/img/dbt-logo.svg;" vertex="1" parent="1">
+          <mxGeometry x="529.77" y="550" width="110.23" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-11" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://datawarehouse.io/wp-content/uploads/2020/04/looker-studio-1k.png;" vertex="1" parent="1">
+          <mxGeometry x="700" y="390" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-12" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://geo-python-site.readthedocs.io/en/latest/_images/pandas_logo.png;" vertex="1" parent="1">
+          <mxGeometry x="364.18" y="530" width="101.63" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-19" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://pythonforundergradengineers.com/posts/zappa/images/flask_icon.png;" vertex="1" parent="1">
+          <mxGeometry x="70" y="249.51" width="127.22" height="130.49" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-22" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://d33wubrfki0l68.cloudfront.net/71c06092efb06fcf30ebecdfda4ff6514ae3112d/aa352/blog/parquet-file-format-big-data-r/parquet-logo.png;" vertex="1" parent="1">
+          <mxGeometry x="192.55" y="410" width="104.9" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-23" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="460" as="sourcePoint" />
+            <mxPoint x="190" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-24" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="304.18" y="459.5" as="sourcePoint" />
+            <mxPoint x="364.18" y="459.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-25" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="469.77" y="459.5" as="sourcePoint" />
+            <mxPoint x="529.77" y="459.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-26" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="459.5" as="sourcePoint" />
+            <mxPoint x="700" y="459.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-27" value="&lt;font color=&quot;#4282f1&quot;&gt;GCS&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f35TPlmRHD-43wabTEe5-28" value="&lt;font color=&quot;#4282f1&quot;&gt;BigQuery&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="554.88" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

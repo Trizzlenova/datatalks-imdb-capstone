@@ -7,6 +7,9 @@
 
 #### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
 
+### Data Pipelin
+![pipeline](images/data_pipeline.png)
+
 ### Technologies Used
 - Cloud: `Google Cloud Storage`
 - Infrastructure as code (IaC): `Terraform`
