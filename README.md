@@ -20,7 +20,7 @@
 
 #### The pipeline starts at the source, the raw data. That raw data will be converted into a format (parquet) that will eventually save us time and space. We'll move these newly converted files into a Google Cloud Storage, where we can load those files into the BigQuery database (our playground!). From BigQuery, we'll transform the data the way we need to in order to answer the above questions. Then we'll visualize that data using Google Looker Studio.
 
-#### The IMDB datasets are refreshed daily. The pipeline will be set to run weekly.
+#### The IMDB datasets are refreshed daily. The pipeline should be ran weekly.
 
 ## :station: Data Pipeline
 ![pipeline](images/data_pipeline.png)
@@ -95,6 +95,7 @@
 ## :alien: Next Steps
 - Unit testing
 - Update Pandas flow to Spark
+- Setup Prefect-Fugue
 - Showcase crew data to show most TV appearances from performer on dashboard
 - Spatial map to visualize growth of shows per region
 - Integrate [OMDB API](https://www.omdbapi.com/) for box office and rotten tomatoes data

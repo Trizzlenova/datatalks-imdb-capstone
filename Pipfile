@@ -10,11 +10,11 @@ prefect-gcp = {version = "==0.2.3", extras = ["cloud_storage"]}
 pyarrow = "*"
 pyspark = "*"
 flask = "*"
-prefect-fugue = "*"
 python-dotenv = "*"
 pandas-gbq = "*"
 dbt-core = "*"
 dbt-bigquery = "*"
+prefect-fugue = "*"
 
 [dev-packages]
 
