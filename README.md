@@ -41,7 +41,7 @@
 ## :notes: Join the Club!
 1. Fork and Clone the repository
    
-2. Steps to reproduce the project onto your machine (assuming you have a [Google Cloud account](https://cloud.google.com/free)):
+2. Steps to reproduce the project onto your machine (assuming you have a [Google Cloud account](https://cloud.google.com/free)): \
     a. Create a new [GCP project](https://console.cloud.google.com/cloud-resource-manager)
     b. Setup [service account & authentication](https://cloud.google.com/docs/authentication/getting-started) for this project
        * Download service-account-keys (.json) for auth.
@@ -54,7 +54,7 @@
       gcloud auth application-default login
       ```
 
-3. Setup for Access:
+3. Setup for Access: \
     a. [IAM Roles](https://cloud.google.com/storage/docs/access-control/iam-roles) for Service account:
     * Go to the *IAM* section of *IAM & Admin* https://console.cloud.google.com/iam-admin/iam
     * Click the *Edit principal* icon for your service account.
@@ -69,7 +69,7 @@
     export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
     ```
 
-4. Setup Terraform
+4. Setup Terraform \
     a. On OS, run the following commands:
     ```
     brew tap hashicorp/tap
@@ -77,7 +77,7 @@
     ```
     b. Remaining instructions for Terraform [here](https://github.com/Trizzlenova/datatalks-imdb-capstone/tree/main/terraform) in the terraform directory
 
-6. Setup Prefect
+6. Setup Prefect \
     a. Sign-up for [Prefect](https://app.prefect.cloud/auth/login) start a workspace
     b. Create the following [prefect blocks](https://docs.prefect.io/latest/concepts/blocks/)
         - [GCP Credentials](https://prefecthq.github.io/prefect-gcp/)
