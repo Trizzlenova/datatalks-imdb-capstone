@@ -16,7 +16,7 @@ Over the years, television has changed dramatically, but it remained true to its
 ## :diamond_shape_with_a_dot_inside: Data Breakdown
 ![erd](images/imdb-erd.png)
 
-How do I even get this data? Well our starting point is at this [URL](https://datasets.imdbws.com/) that gives us access to multiple IMDB datasets (make sure to read the [docs](https://www.imdb.com/interfaces/)!) All the datasets are gzipped .tsv format. To analyze and eventually visualize this data, we'll need to setup a data pipeline.
+***How do I even get this data?*** Well our starting point is at this [URL](https://datasets.imdbws.com/) that gives us access to multiple IMDB datasets (make sure to read the [docs](https://www.imdb.com/interfaces/)!) All the datasets are gzipped .tsv format. To analyze and eventually visualize this data, we'll need to setup a data pipeline.
 
 The pipeline starts at the source, the raw data. That raw data will be converted into a format (parquet) that will eventually save us time and space. We'll move these newly converted files into a Google Cloud Storage, where we can load those files into the BigQuery database (our playground!). From BigQuery, we'll transform the data the way we need to in order to answer the above questions. Then we'll visualize that data using Google Looker Studio.
 
