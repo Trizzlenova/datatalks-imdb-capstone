@@ -3,7 +3,9 @@
 
 ## :movie_camera: Internet Movie Database (IMDB)
 
-#### IMDB is an online database of information related to films, TV series, podcasts, home videos, video games, etc. 
+#### IMDB is an online database of information related to films, TV series, podcasts, home videos, video games, production crew, etc. 
+
+#### Over the years, television has changed dramatically, but it remained true to its original utility, delivering images to a screen. The first "television" system broadcast was a straight-line by Philo Farnsworth on September 7th, 1927. Fast forward nearly a century
 
 #### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
 
