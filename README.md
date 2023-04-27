@@ -5,17 +5,22 @@
 
 #### IMDB is an online database of information related to films, TV series, podcasts, home videos, video games, production crew, etc. 
 
-#### Over the years, television has changed dramatically, but it remained true to its original utility, delivering images to a screen. The first "television" system broadcast was a straight-line by Philo Farnsworth on September 7th, 1927. Fast forward nearly a century
-
-#### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
-
-## :diamond_shape_with_a_dot_inside: IMDB Data ERD
-![erd](images/imdb-erd.png)
+#### Over the years, television has changed dramatically, but it remained true to its original utility, delivering images to a screen. The first "television" system broadcast was a straight-line by Philo Farnsworth on September 7th, 1927. Fast forward nearly a century, new television shows are being created at a fast rate at nearly 4,000 new shows per year!
 
 ## :grey_question: Questions We're All Asking
 1. How do I even get this data?
-2. What are the top voted TV shows?
-3. What genres are growing and falling year over year?
+2. How much has television grown over the years?
+3. What are the top voted TV shows?
+4. How does time effect a genre? What do we want!?
+
+## :diamond_shape_with_a_dot_inside: Data Breakdown
+![erd](images/imdb-erd.png)
+
+#### How do I even get this data? Well our starting point is at this [URL](https://datasets.imdbws.com/) that gives us access to multiple IMDB datasets (make sure to read the [docs](https://www.imdb.com/interfaces/)!) All the datasets are gzipped .tsv format. To analyze and eventually visualize this data, we'll need to setup a data pipeline. 
+
+#### The pipeline starts at the source, the raw data. That raw data will be converted into a format (parquet) that will eventually save us time and space. We'll move these newly converted files into a Google Cloud Storage, where we can load those files into the BigQuery database (our playground!). From BigQuery, we'll transform the data the way we need to in order to answer the above questions. Then we'll visualize that data using Google Looker Studio.
+
+#### The IMDB datasets are refreshed daily. The pipeline will be set to run weekly.
 
 ## :station: Data Pipeline
 ![pipeline](images/data_pipeline.png)
