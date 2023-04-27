@@ -7,12 +7,15 @@
 
 #### To access data files, click [here](https://datasets.imdbws.com/). To read the dataset documentation, click [here](https://www.imdb.com/interfaces/).
 
+## :diamond_shape_with_a_dot_inside: IMDB Data ERD
+![erd](images/imdb-erd.png)
+
 ## :grey_question: Questions We're All Asking
 1. How do I even get this data?
 2. What are the top voted TV shows?
-3. What is the hottest genre year over year?
+3. What genres are growing and falling year over year?
 
-## :twisted_rightwards_arrows: Data Pipeline
+## :station: Data Pipeline
 ![pipeline](images/data_pipeline.png)
 
 ## :sparkles: Technologies Used
@@ -25,6 +28,8 @@
 - Data Visualization: `Looker Studio`
 
 ## :bar_chart: Dashboard
+[Google Looker Link](https://lookerstudio.google.com/reporting/057d04ba-879a-4b4a-9f5c-d9e7a1537464)
+![dashboard](images/looker.png)
 
 ## :notes: Join the Club!
 1. Fork and Clone the repository
@@ -81,3 +86,8 @@
     f. Run the flow using flask: `python3 manage.py` or `flask run`
 
 ## :alien: Next Steps
+- Unit testing
+- Update Pandas flow to Spark
+- Showcase crew data to show most TV appearances from performer on dashboard
+- Spatial map to visualize growth of shows per region
+- Integrate [OMDB API](https://www.omdbapi.com/) for box office and rotten tomatoes data
