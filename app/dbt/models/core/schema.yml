@@ -8,7 +8,7 @@ sources:
       # For postgres:
       # database: production
 
-      schema: imdb_stg_imdb
+      schema: de_imdb_staging
 
       # loaded_at_field: record_loaded_at
       tables:
