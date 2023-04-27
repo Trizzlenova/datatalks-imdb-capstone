@@ -54,7 +54,7 @@
       gcloud auth application-default login
       ```
 
-3. Setup for Access
+3. Setup for Access:
     a. [IAM Roles](https://cloud.google.com/storage/docs/access-control/iam-roles) for Service account:
     * Go to the *IAM* section of *IAM & Admin* https://console.cloud.google.com/iam-admin/iam
     * Click the *Edit principal* icon for your service account.
@@ -84,7 +84,7 @@
         - [GCS Bucket](https://prefecthq.github.io/prefect-gcp/cloud_storage/#prefect_gcp.cloud_storage.GcsBucket)
     c. Configure your credentials with GCP
 
-7. Run the pipeline :boom:
+7. Run the pipeline :boom: \
     a. After the repository has been forked and cloned, cd into the repository
     b. Run the python environment: `pipenv shell`
     c. Install the dependencies: `pipenv install`
